@@ -1,14 +1,14 @@
 HTML5_RECORDING
 ===============
 
-Server framework,\n
-  django\n
+Server framework,
+django
 
-In backup,\n
-  contains sample code for audio and video recording. \n
+In backup,
+  contains sample code for audio and video recording. 
   
-In myproject\n
-  cotain integrated version of \n
+In myproject
+  cotain integrated version of 
     audio recording\n
     video recording\n
     single client server chat application with text to speech
