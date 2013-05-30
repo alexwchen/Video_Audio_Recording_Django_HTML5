@@ -1,0 +1,51 @@
+
+/*------------------
+    File Upload 
+-------------------*/
+#fileupload
+{
+	border: 1px solid black;
+}
+
+
+/*------------------
+    Audio Recording
+-------------------*/
+#audio_recording
+{
+	border: 1px solid red;
+}
+
+body 
+{ 
+    font: 14pt Arial, sans-serif; 
+    background: lightgrey; 
+    text-align: center; 
+    margin-top: 12pt;
+}
+
+select 
+{ 
+    font: 14pt Arial, sans-serif; 
+}
+
+canvas 
+{ 
+    display: inline-block; 
+    background: #202020; 
+    box-shadow: 0px 0px 10px blue;
+}
+
+#record.recording 
+{ 
+    background: red;
+    background: -webkit-radial-gradient(center, ellipse cover, #ff0000 0%,lightgrey 75%,lightgrey 100%,#7db9e8 100%); 
+}
+
+/*------------------
+    Vedio Recording
+-------------------*/
+#video_recording
+{
+	border: 1px solid blue;
+}

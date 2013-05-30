@@ -1,0 +1,101 @@
+.all_box
+{
+	width:80%;
+	height:100%;
+	margin-bottom:8px;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	/*border: 3px solid blue;*/
+}
+/*************
+	Top Bar
+*************/
+.top_box
+{
+	width:100%;
+	height:50px;
+	font-size:20px;
+	font-family:Arial;
+	float:left;
+	/*border: 1px solid yellow;*/
+}
+
+.record_button
+{
+	width:130px;
+	height:30px;
+	font-size:30px;
+	font-family:Arial;
+	margin-left:40px;
+	margin-top:10px;
+	cursor:pointer;
+	border: 3px solid green;
+}
+
+.last_convo_box
+{
+	width:100%;
+	height:50px;
+	font-size:20px;
+	font-family:Arial;
+	float:left;
+	/*border: 1px solid red;*/
+}
+.last_convo
+{
+	width:225px;
+	height:30px;
+	font-size:20px;
+	font-family:Arial;
+	margin-left:40px;
+	margin-top:10px;
+	float:left;
+}
+
+.last_convo_content
+{
+	width:750px;
+	font-size:20px;
+	font-family:Arial;
+	margin-left:10px;
+	margin-top:10px;
+	border-bottom: 3px solid green;
+	float:left;
+	
+}
+
+.video_box
+{
+	width:300px;
+	height:300px;
+	font-size:20px;
+	font-family:Arial;
+	margin-left:40px;
+	margin-top:10px;
+	float:left;
+	border: 3px solid green;
+}
+
+
+
+.camera_left
+{
+	margin-left:40px;
+	float:left;
+	border: 3px solid green;
+}
+
+#video-preview
+{
+	margin-left:40px;
+	float:left;
+	border: 3px solid green;
+}
+
+.audio_right
+{
+	margin-left:40px;
+	float:left;
+	border: 3px solid green;	
+}
