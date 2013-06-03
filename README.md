@@ -1,5 +1,5 @@
-HTML5_RECORDING
-===============
+HTML5 RECORDING Sample Code
+===========================
 
 Server framework
 ----------------
@@ -21,7 +21,8 @@ In myproject:
     
     single client server chat application with text to speech
     
-Useful Links:
+Useful Links
+------------
 
   audio recording: http://www.phpied.com/files/webaudio/record.html
   
@@ -29,7 +30,8 @@ Useful Links:
   
   HTML5 rocks tutorial: http://www.html5rocks.com/en/tutorials/getusermedia/intro/
   
-Bugs:
+Bugs
+----
 
   audio + video recording cause low quality recording on the audio
   
