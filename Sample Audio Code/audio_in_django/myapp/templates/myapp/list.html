@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="/media/myapp/list.css" />
+<link rel="stylesheet" type="text/css" href="/media/video/video_rec.css" />
+
+<script type='text/javascript' src="/media/JQ_LIB/jquery.js"></script>
+
+<script type='text/javascript' src="/media/audio/recorder.js"></script>
+<script type='text/javascript' src="/media/audio/audiodisplay.js"></script>
+<script type='text/javascript' src="/media/audio/main.js"></script>
+
+<script type='text/javascript' src="/media/video/whammy.min.js"></script>
+<script type='text/javascript' src="/media/video/ga.js"></script>
+<script type='text/javascript' src="/media/video/video_rec.js"></script>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Minimal Django File Upload Example</title>	
+	</head>
+
+    <body>
+        <!-- video recording section -->
+		<!--
+        <div id="video_recording">
+			<details>
+			  <summary>What's this?</summary>
+			  <div>
+			    <p>An example of creating a .webm movie from a <code>getUserMedia()</code> video capture.</p>
+			    <p><b>Support:</b> Chrome 21 supports <code>getUserMedia()</code>.</p>
+			  </div>
+			</details>
+
+			<h2>Recording .webm video from a <code>getUserMedia()</code>.</h2>
+
+			<section>
+			<div style="float:left;">
+			  <button id="camera-me">1. Turn on camera</button>
+			  <h4><code>getUserMedia()</code> feed</h4>
+			  <video autoplay=""></video>
+			</div>
+			<div id="video-preview">
+			  <button id="record-me" disabled="">2. Record</button>
+			  <button id="stop-me" disabled="">◼</button>
+			  <span id="elasped-time"></span>
+			  <h4>.webm recording (no audio)</h4>
+			</div>		
+		</div>
+		-->
+
+
+
+        <!-- audio recording section -->
+        <div id="audio_recording">
+            <canvas id="analyser" width="768" height="200"></canvas><br>
+            <canvas id="wavedisplay" width="768" height="200"></canvas><br>
+            <img id="record" width="128" height="128" src="/media/Images/mic128.png" onclick="toggleRecording(this);"><br>
+            <img src="/media/Images/save.svg" onclick="saveAudio();">
+        </div>
+
+
+
+        <!-- file uplaod section -->
+        <div id="fileupload">
+            <!-- List of uploaded documents -->
+            {% if documents %}
+                <ul>
+                {% for document in documents %}
+                    <li><a href="{{ document.docfile.url }}">{{ document.docfile.name }}</a></li>
+                {% endfor %}
+                </ul>
+            {% else %}
+                <p>No documents.</p>
+            {% endif %}
+
+            <!-- Upload form. Note enctype attribute! -->
+            <form action="{% url list %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <p>{{ form.non_field_errors }}</p>
+                <p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
+                <p>
+                    {{ form.docfile.errors }}
+                    {{ form.docfile }}
+                </p>
+                <p><input type="submit" value="Upload" /></p>
+            </form>
+        </div>		
+
+
+
+	</body>
+
+</html> 
+
+

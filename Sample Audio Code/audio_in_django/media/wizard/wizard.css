@@ -1,0 +1,67 @@
+/*************
+	Outline
+*************/
+.outter_box
+{
+	width:60%;
+	height:40px;
+	margin-bottom:8px;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	/*order: 1px solid blue;*/
+}
+
+.input_box
+{
+	width:100%;
+	height:28px;
+	font-size:20px;
+	font-family:Arial;
+	float:left;
+	/*border: 1px solid yellow;*/
+}
+
+.inner_box
+{
+	width:100%;
+	height:40px;
+	margin-left:auto;
+	margin-right:auto;
+	/*border: 1px solid red;*/
+	
+}
+/*************
+	Display
+*************/
+.title_display
+{
+	width:100%;
+	margin-bottom:8px;
+	margin-top:30px;
+	font-size:25px;
+	font-family:Arial;
+	margin-left:auto;
+	margin-right:auto;
+	border-bottom: 3px solid green;
+}
+
+.display_box
+{
+	width:50%;
+	margin-bottom:8px;
+	margin-left:auto;
+	margin-right:auto;
+	/*border: 1px solid green;*/
+}
+
+.text_containter
+{
+	width:100%;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:20px;
+	font-family:Arial;
+	float:left;
+	border-bottom: 3px solid green;
+}
